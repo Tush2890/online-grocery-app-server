@@ -1,6 +1,6 @@
 # Getting started with Node JS Express Server
 
-A Node JS Express server created for [https://github.com/Tush2890/online-grocery-app-client](online-grocery-app-client).
+A Node JS Express server created for (https://github.com/Tush2890/online-grocery-app-client)[online-grocery-app-client].
 
 ## Available Scripts
 
