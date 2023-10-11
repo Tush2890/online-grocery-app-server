@@ -8,11 +8,12 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var restaurantsRouter = require('./routes/restaurants');
 var locationsRouter = require('./routes/locations');
+var usersRouter = require('./routes/user');
 
 var app = express();
 
 app.use(cors({
-  origin: ['http://localhost:3000']
+  origin: ['http://localhost:3000', 'https://localhost:3000']
 }))
 
 // view engine setup
@@ -28,14 +29,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/restaurants', restaurantsRouter);
 app.use('/locations', locationsRouter);
+app.use('/user', usersRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
