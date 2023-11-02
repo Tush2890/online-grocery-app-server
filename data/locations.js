@@ -1,8 +1,8 @@
 const locations = [
-    { id: 'blr', name: 'Bengaluru' },
-    { id: 'del', name: 'Delhi' },
-    { id: 'bom', name: 'Mumbai' },
-    { id: 'cal', name: 'Kolkata' }
+    { id: 'harrow', name: 'Harrow' },
+    { id: 'millHill', name: 'Mill Hill' },
+    { id: 'hendon', name: 'Hendon' },
+    { id: 'cricklewood', name: 'Cricklewood' }
 ];
 
 module.exports = locations;
